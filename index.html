@@ -7,20 +7,30 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./style.css">
+
 
 </head>
-<body>
+<body class="bg-[#1A0B2E]">
     <header>
-        <nav>
-            <div>
-                <h1>TechWave</h1>
+        <nav class="flex justify-between items-center  p-[20px] lg:px-[200px] py-[16px]">
+            <div class="text-3xl sm:text-3xl lg:text-5xl text-white font-bold">
+                <h1>Tech<span class=" gradient-text">Wave</span></h1>
             </div>
-            <ul>
+            <ul class="hidden lg:flex text-white gap-[32px]">
                 <li><a href="">About</a></li>
                 <li><a href="">Episodes</a></li>
                 <li><a href="">Host</a></li>
             </ul>
-            <div><button>Subscribe</button></div>
+            <div>
+                <button class="hidden lg:flex items-center text-white gradient-color text-[16px] font-semibold px-[16px] py-[12px] rounded-full">
+                    <a href="">Subscribe</a>
+                    <i class="fa-solid fa-arrow-right pl-[4px]"></i>
+                </button>
+                <a href=""><img class="w-[24px] h-[24px]  lg:hidden" src="./assets/hamburger-menu.png" alt=""></a>
+            </div>
         </nav>
     </header>
 </body>
