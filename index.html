@@ -6,16 +6,18 @@
     <title>TechWave</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" href="./style.css">
 
 
 </head>
-<body class="bg-[#1A0B2E]">
+<body class="bg-[#1A0B2E] inter">
     <header>
-        <nav class="flex justify-between items-center  p-[20px] lg:px-[200px] py-[16px]">
+        <nav class="flex justify-between items-center  p-[20px] lg:px-[200px] py-[16px] border-b border-[#412567]">
             <div class="text-3xl sm:text-3xl lg:text-5xl text-white font-bold">
                 <h1>Tech<span class=" gradient-text">Wave</span></h1>
             </div>
@@ -32,6 +34,59 @@
                 <a href=""><img class="w-[24px] h-[24px]  lg:hidden" src="./assets/hamburger-menu.png" alt=""></a>
             </div>
         </nav>
+        <section class="min-h-screen bg-[url('./assets/hero-bg.png')] bg-no-repeat bg-contain bg-top my-10">
+            <div class="flex  grid  justify-items-center">
+                <div class="flex absolute justify-center items-center px-3 py-1 bg-[#00FF88] shadow-[0_0_15px_#00FF88] rounded-full lg:top-80 right-200 ">
+                    <h6 class="text-[#1A0B2E] font-semibold">NEW</h6>
+                </div>
+
+                <div class="lg:mt-40"><img class="h-[200px] lg:h-[350px] " src="./assets/hero-circle.png" alt="hero-circle"></div>
+                <div class="flex absolute top-40  lg:top-90"><img class="h-[100px] lg:h-[200px]" src="./assets/microphone.png" alt="microphone logo"></div>
+
+                <div class="flex grid justify-items-center gap-5 pt-5">
+                    <div><h1 class="text-white font-extrabold text-2xl lg:text-5xl">TechWave</h1></div>
+                    <div><p class="text-center text-gray-500 text-base">Your daily dose of tech insights, productivity hacks, and personal growth</p></div>
+                    <div class="flex justify-items-center gap-2">
+                        <button class="text-white gradient-color text-[16px] font-semibold px-[16px] py-[12px] rounded-full"><a href=""><i class="fa-brands fa-spotify pr-[15px]"></i>Listen on Spotify</a></button>
+                        <button class="text-white button-color text-[16px] font-semibold px-[16px] py-[12px] rounded-full"><a href=""></a><i class="fa-regular fa-envelope pr-[15px]"></i>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </header>
+    <section class="flex grid mx-[20px] my-[40px] lg:mx-[200px] my-[120px]">
+        <div class="flex grid justify-items-center ">
+            <h1 class="text-3xl lg:text-5xl text-gray-50 font-bold pb-[16px]">About the Podcast</h1>
+            <p class="text-base text-gray-500 text-center">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+            We break down complex topics into digestible insights, explore productivity strategies that actually work,
+            and share stories of personal growth from industry leaders.
+            </p>
+            <br>
+            <p class="text-base text-gray-500 text-center">
+            Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+            </p>
+            <br> 
+        </div>
+        <div class="border-b-1 border-gray-500 my-[80px]"></div>
+        <div class="flex grid grid-cols-2 lg:flex mx-auto gap-[80px]">
+            <div class="justify-items-center">
+                <h1 class="text-3xl font-extrabold text-[#00FF88] pb-[8px]">150K+</h1>
+                <p class="text-base text-gray-500 ">Monthly Listeners</p>
+            </div>
+            <div class="justify-items-center">
+                <h1 class="text-3xl font-extrabold text-[#00FF88] pb-[8px]">200+</h1>
+                <p class="text-base text-gray-500 ">Episodes Published</p>
+            </div>
+            <div class="justify-items-center">
+                <h1 class="text-3xl font-extrabold text-[#00FF88] pb-[8px]">4.9★</h1>
+                <p class="text-base text-gray-500 ">Average Rating</p>
+            </div>
+            <div class="justify-items-center">
+                <h1 class="text-3xl font-extrabold text-[#00FF88] pb-[8px]">50+</h1>
+                <p class="text-base text-gray-500 ">Industry Experts</p>
+            </div> 
+        </div>
+    </section>
 </body>
 </html>
