@@ -35,31 +35,36 @@
                 <a href=""><img class="w-[24px] h-[24px]  lg:hidden" src="./assets/hamburger-menu.png" alt=""></a>
             </div>
         </nav>
-        <!-- hero section problems new tag area -->
-        <section class="min-h-screen bg-[url('./assets/hero-bg.png')] bg-no-repeat bg-contain bg-top my-10">
-            <div class="flex  grid  justify-items-center">
-                <div class="flex absolute justify-center items-center px-3 py-1 bg-[#00FF88] shadow-[0_0_15px_#00FF88] rounded-full lg:top-80 right-200 ">
+        <!-- hero section area -->
+        <section class="relative bg-[url('./assets/hero-bg.png')] bg-no-repeat bg-center bg-cover py-[80px] sm:py-[100px] lg:py-[160px]">
+            <div class="grid  justify-items-center">
+                <!-- hero circle -->
+                <div class="relative">
+                    <img class="h-[200px] lg:h-[350px] " src="./assets/hero-circle.png" alt="hero-circle">
+                </div>
+                <!-- new logo -->
+                <div class="absolute px-3 py-1 bg-[#00FF88] shadow-[0_0_15px_#00FF88] rounded-full ">
                     <h6 class="text-[#1A0B2E] font-semibold">NEW</h6>
                 </div>
-
-                <div class="lg:mt-40"><img class="h-[200px] lg:h-[350px] " src="./assets/hero-circle.png" alt="hero-circle"></div>
-                <div class="flex absolute top-40  lg:top-90"><img class="h-[100px] lg:h-[200px]" src="./assets/microphone.png" alt="microphone logo"></div>
-
-                <div class="flex grid justify-items-center gap-5 pt-5">
-                    <div><h1 class="text-white font-extrabold text-2xl lg:text-5xl">TechWave</h1></div>
+                <!-- microphone logo -->
+                <div class="absolute top-33 lg:top-55">
+                    <img class="h-[100px] lg:h-[200px]" src="./assets/microphone.png" alt="microphone logo">
+                </div>
+                <!-- content -->
+                <div class="grid justify-items-center gap-5 py-5">
+                    <div><h1 class="text-white font-extrabold text-2xl lg:text-7xl">TechWave</h1></div>
                     <div><p class="text-center text-gray-500 text-base">Your daily dose of tech insights, productivity hacks, and personal growth</p></div>
-                    <div class="flex justify-items-center gap-2">
+                    <div class="flex justify-items-center gap-2 ">
                         <button class="text-white gradient-color text-[16px] font-semibold px-[16px] py-[12px] rounded-full"><a href=""><i class="fa-brands fa-spotify pr-[15px]"></i>Listen on Spotify</a></button>
                         <button class="text-white button-color text-[16px] font-semibold px-[16px] py-[12px] rounded-full"><a href=""></a><i class="fa-regular fa-envelope pr-[15px]"></i>Subscribe</button>
                     </div>
                 </div>
             </div>
-
         </section>
     </header>
     <!-- about section done-->
-    <section class="flex grid mx-[20px] my-[40px] lg:mx-[200px] my-[120px]">
-        <div class="flex grid justify-items-center ">
+    <section class="grid mx-[20px] my-[40px] lg:mx-[200px] my-[120px]">
+        <div class="grid justify-items-center ">
             <h1 class="text-3xl lg:text-5xl text-gray-50 font-bold pb-[16px]">About the Podcast</h1>
             <p class="text-base text-gray-500 text-center">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
             We break down complex topics into digestible insights, explore productivity strategies that actually work,
@@ -72,7 +77,7 @@
             <br> 
         </div>
         <div class="border-b-1 border-gray-500 my-[80px]"></div>
-        <div class="flex grid grid-cols-2 lg:flex mx-auto gap-[80px]">
+        <div class="grid grid-cols-2 lg:flex mx-auto gap-[80px]">
             <div class="justify-items-center">
                 <h1 class="text-3xl font-extrabold text-[#00FF88] pb-[8px]">150K+</h1>
                 <p class="text-base text-gray-500 ">Monthly Listeners</p>
@@ -92,11 +97,11 @@
         </div>
     </section>
     <!-- Why Choose TechWave -->
-     <section class="flex grid px-[20px] py-[40px] lg:px-[200px] py-[120px]">
+     <section class="grid px-[20px] py-[40px] lg:px-[200px] py-[120px]">
         <div class="text-center py-5">
             <h1 class="text-3xl text-gray-50 font-bold lg:text-5xl pb-[16px]">Why Choose TechWave</h1>
         </div>
-        <div class="flex grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 
             <div class="bg-[#351165] rounded-4xl space-y-4 p-[24px] lg:p-[40px] row-span-2">
                 <img class="" src="./assets/headphone.png" alt="">
@@ -235,17 +240,17 @@
      <!-- footer area -->
       <footer class="relative 
             bg-[url('./assets/footer-bg.png')]
-            bg-no-repeat bg-center bg-contain
-            py-[80px] sm:py-[100px] lg:py-[160px]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+            bg-no-repeat bg-center bg-cover
+            py-[10px] sm:py-[20px] lg:py-[110px]">
+        <div class="mx-auto px-4 sm:px-6 text-center">
             <!-- text logo -->
-            <div class="text-3xl text-center pb-5 sm:text-4xl lg:text-6xl text-white font-bold"><h1>Tech<span class=" gradient-text">Wave</span></h1></div>
+            <div class="text-3xl text-center pb-5 sm:text-4xl text-white font-bold lg:text-6xl"><h1>Tech<span class=" gradient-text">Wave</span></h1></div>
             <!-- content logo -->
-            <div class="grid grid-cols-2 justify-center  gap-[40px] lg:flex">
-                <a href=""><div class="flex gap-2"><img src="./assets/spotify.png" alt="Spotify"><p class="text-base text-gray-400">Spotify</p></div></a>
-                <a href=""><div class="flex gap-2"><img src="./assets/twitter.png" alt="twitter"><p class="text-base text-gray-400">Spotify</p></div></a>
-                <a href=""><div class="flex gap-2"><img src="./assets/youtube-podcast.png" alt="youtube-podcast"><p class="text-base text-gray-400">Spotify</p></div></a>
-                <a href=""><div class="flex gap-2"><img src="./assets/apple-podcast.png" alt="apple-podcast"><p class="text-base text-gray-400">Spotify</p></div></a>
+            <div class="grid grid-cols-2 justify-center items-center px-16  gap-[40px] lg:flex">
+                <a href=""><div class="flex gap-2"><img class="h-[24px]" src="./assets/spotify.png" alt="Spotify"><p class="text-base text-gray-400">Spotify</p></div></a>
+                <a href=""><div class="flex gap-2"><img class="h-[24px]" src="./assets/twitter.png" alt="twitter"><p class="text-base text-gray-400">Spotify</p></div></a>
+                <a href=""><div class="flex gap-2"><img class="h-[24px]" src="./assets/youtube-podcast.png" alt="youtube-podcast"><p class="text-base text-gray-400">Spotify</p></div></a>
+                <a href=""><div class="flex gap-2"><img class="h-[24px]" src="./assets/apple-podcast.png" alt="apple-podcast"><p class="text-base text-gray-400">Spotify</p></div></a>
             </div>
             <!-- podcast -->
             <a href=""><p class="text-center text-base text-gray-400 py-5">© 2026 TechWave Podcast.All rights reserved.</p></a>
