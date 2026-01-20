@@ -38,19 +38,39 @@
         <!-- hero section area -->
         <section class="relative bg-[url('./assets/hero-bg.png')] bg-no-repeat bg-center bg-cover py-[80px] sm:py-[100px] lg:py-[160px]">
             <div class="grid  justify-items-center">
-                <!-- hero circle -->
-                <div class="relative">
-                    <img class="h-[200px] lg:h-[350px] " src="./assets/hero-circle.png" alt="hero-circle">
+                <div class="relative flex items-center justify-center">
+
+        <!-- hero circle -->
+                    <img
+                        src="./assets/hero-circle.png"
+                        class="h-[200px] sm:h-[240px] lg:h-[350px]"
+                        alt="hero-circle"
+                    >
+
+        <!-- NEW badge -->
+                    <div
+                        class="absolute 
+                        top-2 right-2
+                        sm:top-3 sm:right-3
+                        lg:top-6 lg:right-6
+                        px-3 py-1
+                        bg-[#00FF88]
+                        shadow-[0_0_15px_#00FF88]
+                        rounded-full"
+                >
+                        <h6 class="text-[#1A0B2E] font-semibold text-xs sm:text-sm">NEW</h6>
+                    </div>
+
+                    <!-- microphone -->
+                    <img
+                        src="./assets/microphone.png"
+                        class="absolute
+                            h-[90px]
+                            sm:h-[120px]
+                            lg:h-[200px]"
+                        alt="microphone"
+                    >
                 </div>
-                <!-- new logo -->
-                <div class="absolute px-3 py-1 bg-[#00FF88] shadow-[0_0_15px_#00FF88] rounded-full ">
-                    <h6 class="text-[#1A0B2E] font-semibold">NEW</h6>
-                </div>
-                <!-- microphone logo -->
-                <div class="absolute top-33 lg:top-55">
-                    <img class="h-[100px] lg:h-[200px]" src="./assets/microphone.png" alt="microphone logo">
-                </div>
-                <!-- content -->
                 <div class="grid justify-items-center gap-5 py-5">
                     <div><h1 class="text-white font-extrabold text-2xl lg:text-7xl">TechWave</h1></div>
                     <div><p class="text-center text-gray-500 text-base">Your daily dose of tech insights, productivity hacks, and personal growth</p></div>
